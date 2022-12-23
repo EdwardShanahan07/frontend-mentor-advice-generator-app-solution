@@ -7,9 +7,9 @@
 :root {
   --Color-Light-Cyan: #cee3e9;
   --Color-Neon-Green: #52ffa8;
-  --Color-Grayish-Blue: hsl(217, 19%, 38%);
-  --Color-Grayish-Blue: hsl(217, 19%, 24%);
-  --Color-Dark-Blue: hsl(218, 23%, 16%);
+  --Color-Grayish-Blue: #4e5d73;
+  --Color-Dark-Grayish-Blue: #323a49;
+  --Color-Dark-Blue: #1f2632;
 
   --Font-Family-Primary: "Manrope", sans-serif;
 }
@@ -18,4 +18,9 @@
 
 body {
   font-family: var(--Font-Family-Primary);
+  background-color: var(--Color-Dark-Grayish-Blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
