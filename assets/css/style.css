@@ -18,9 +18,18 @@
 
 body {
   font-family: var(--Font-Family-Primary);
-  background-color: var(--Color-Dark-Grayish-Blue);
+  background-color: var(--Color-Dark-Blue);
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+}
+
+/* Card */
+
+.card {
+  background-color: var(--Color-Dark-Grayish-Blue);
+  border-radius: 10px;
+  width: 540px;
+  padding: 50px 48px 80px 48px;
 }
