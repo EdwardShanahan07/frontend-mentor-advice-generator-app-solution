@@ -1,6 +1,6 @@
 /* Imports */
 
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap");
 
 /* Variables */
 
@@ -30,6 +30,22 @@ body {
 .card {
   background-color: var(--Color-Dark-Grayish-Blue);
   border-radius: 10px;
+  text-align: center;
   width: 540px;
   padding: 50px 48px 80px 48px;
+}
+
+.card__id {
+  color: var(--Color-Neon-Green);
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 2.5rem;
+}
+
+.card__quote {
+  color: var(--Color-Light-Cyan);
+  font-size: 1.75rem;
+  margin-bottom: 2.5rem;
 }
