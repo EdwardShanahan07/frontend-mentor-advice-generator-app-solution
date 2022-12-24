@@ -50,6 +50,14 @@ body {
   margin-bottom: 2.5rem;
 }
 
+.divider__desktop {
+  display: block;
+}
+
+.divider__mobile {
+  display: none;
+}
+
 button {
   background-color: var(--Color-Neon-Green);
   border: none;
@@ -82,11 +90,19 @@ button svg {
     border-radius: 10px;
     text-align: center;
     max-width: 340px;
-    padding: 24px 24px 48px 24px;
+    padding: 24px 24px 72px 24px;
     position: relative;
   }
 
   .divider svg {
     width: 100%;
+  }
+
+  .divider__mobile {
+    display: block;
+  }
+
+  .divider__desktop {
+    display: none;
   }
 }
