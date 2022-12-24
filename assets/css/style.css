@@ -75,3 +75,18 @@ button svg {
   height: 24px;
   width: 24px;
 }
+
+@media (max-width: 600px) {
+  .card {
+    background-color: var(--Color-Dark-Grayish-Blue);
+    border-radius: 10px;
+    text-align: center;
+    max-width: 340px;
+    padding: 24px 24px 48px 24px;
+    position: relative;
+  }
+
+  .divider svg {
+    width: 100%;
+  }
+}
