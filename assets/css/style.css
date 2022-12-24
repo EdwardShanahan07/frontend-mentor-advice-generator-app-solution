@@ -10,7 +10,6 @@
   --Color-Grayish-Blue: #4e5d73;
   --Color-Dark-Grayish-Blue: #323a49;
   --Color-Dark-Blue: #1f2632;
-
   --Font-Family-Primary: "Manrope", sans-serif;
 }
 
@@ -31,14 +30,15 @@ body {
   background-color: var(--Color-Dark-Grayish-Blue);
   border-radius: 10px;
   text-align: center;
-  width: 540px;
-  padding: 50px 48px 80px 48px;
+  max-width: 540px;
+  padding: 48px 48px 72px 48px;
+  position: relative;
 }
 
 .card__id {
   color: var(--Color-Neon-Green);
   font-size: 0.875rem;
-  font-weight: 400;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 4px;
   margin-bottom: 2.5rem;
@@ -48,4 +48,30 @@ body {
   color: var(--Color-Light-Cyan);
   font-size: 1.75rem;
   margin-bottom: 2.5rem;
+}
+
+button {
+  background-color: var(--Color-Neon-Green);
+  border: none;
+  height: 64px;
+  width: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  position: absolute;
+  bottom: -32px;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%);
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0px 0px 48px var(--Color-Neon-Green);
+}
+
+button svg {
+  height: 24px;
+  width: 24px;
 }
