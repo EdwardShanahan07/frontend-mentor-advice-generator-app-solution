@@ -1,8 +1,3 @@
-const getData = (url) =>
-  fetch(url)
-    .then((res) => res.json())
-    .then((data) => generateDOMElements(data));
-
 const generateDOMElements = (data) => {
   const quoteNumberElement = document.createElement("p");
   const quoteElement = document.createElement("p");
@@ -14,11 +9,23 @@ const generateDOMElements = (data) => {
   divElement.appendChild(quoteNumberElement);
 
   quoteNumberElement.textContent = data.slip.id;
-  quoteElement.textContent = data.slip.adivce;
+  quoteElement.textContent = data.slip.advice;
 
   divElement.appendChild(quoteElement);
 
   return divElement;
 };
 
-getData("https://api.adviceslip.com/advice");
+const getData = (url) => {
+  fetch(url)
+    .then((res) => res.json())
+    .then((data) => generateDOMElements(data));
+};
+
+const renderApp = () => {
+  getData("https://api.adviceslip.com/advice");
+
+  document.querySelector(".card__results").innerHTML = generateDOMElements();
+};
+
+renderApp();
